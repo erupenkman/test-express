@@ -6,7 +6,7 @@ var express = require('express')
   , http = require('http');
 
 var app = express();
-var server = app.listen(3000);
+var server = app.listen(80);
 
 app.configure(function(){
   app.set('views', __dirname + '/views');
@@ -27,4 +27,4 @@ app.get('/', function(req, res) {
 	res.send(200,"Hello World");
 });
 
-console.log("Express server listening on port ", 3000);
+console.log("Express server listening on port ", 80);
