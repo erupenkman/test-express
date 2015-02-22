@@ -24,7 +24,7 @@ app.configure('development', function(){
 });
 
 app.get('/', function(req, res) {
-	res.send(200,"Hello World");
+	res.send(200,"Hello Deployment");
 });
 
 console.log("Express server listening on port ", 80);
